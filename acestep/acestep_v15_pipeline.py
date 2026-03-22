@@ -646,6 +646,7 @@ def main():
                 inbrowser=False,
                 auth=auth,
                 allowed_paths=allowed_paths,  # include output_dir + user-provided
+                share=True
             )
 
             # Now add API routes to Gradio's FastAPI app (app is available after launch)
@@ -676,6 +677,7 @@ def main():
                 inbrowser=False,
                 auth=auth,
                 allowed_paths=allowed_paths,  # include output_dir + user-provided
+                share=True
             )
     except Exception as e:
         print(f"Error launching Gradio: {e}", file=sys.stderr)
